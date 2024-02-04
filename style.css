@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    text-align: center;
+    color: darkgray;
+    background-color: #39392b;
+}
+
+.nav__bar {
+    margin: 1.5em 1.5em 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #595959;
+}
+
+.search__text {
+    padding: 0.6em 1em;
+    background-color: rgb(1 1 1 / 50%);
+    color: darkgray;
+    border-radius: 1em;
+}
+
+.search__button {
+    padding: 0.5em 2em;
+    background-color: rgb(1 1 1 / 50%);
+    color: darkgray;
+}
+
+.tvmaze__logo {
+    height: 40px;
+}
+
+.shows__display {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+.show__div {
+    padding: 0 0.8em;
+    margin: 1em;
+    width: 300px;
+    background-color: rgb(1 1 1 / 50%);
+    border-radius: 0.3em;
+    border: 2px groove #dc8e00;
+}
+
+.show__name {
+    font-size: 1.5em;
+    width: 75%;
+    display: inline-block;
+    padding: 0em 0.5em 0.1em;
+}
+
+.show__image {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.unavailable {
+    filter: brightness(0.5);
+}
+
+.show__info {
+    padding: 0.2em 1em 0.2em 0.5em;
+    text-decoration: underline;
+    cursor: pointer;
+    color: #7a7af2;
+}
+
+.show__info::after {
+    content: "";
+    background: url("images/info.png") no-repeat center;
+    padding: 1em;
+}
+
+.show__info::before {
+    content: "";
+    background: url("images/list.png") no-repeat center;
+    filter: invert(0.8);
+    padding: 1em;
+}
+
+.show__info:hover {
+    color: orange
+}
+
+.show__info:active {
+    color: #d06d00
+}
+
+.details__background {
+    background-color: rgb(0, 0, 0, 0.8);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.details__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-evenly;
+    align-items: stretch;
+    background: rgb(38 38 48);
+    border: 1px solid #55547e;
+    text-align: justify;
+    margin: 10% 25%;
+    padding: 2em;
+}
+
+.details__img {
+    max-width: 30%;
+}
+
+.details__name {
+    font-size: 1.2em;
+    text-decoration: underline;
+    font-weight: bold;
+    color: white;
+}
+
+.details__summary {
+    margin-top: 2em;
+}
+
+.details__link>a {
+    color: #FF9800;
+}
+
+@media screen and (max-width: 550px) {
+    .tvmaze__logo {
+        height: 20px;
+    }
+
+    .details__container {
+        margin: 2% 15%;
+        padding: 1em;
+    }
+
+    .details__summary {
+        margin-top: 0;
+    }
+}

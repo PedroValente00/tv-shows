@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/favicon.ico" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TV shows</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav__bar">
+            <form id="search__form">
+                <input type="text" class="search__text" name="search__text" placeholder="Game of Thrones">
+                <button class="search__button" name="search__button">Search</button>
+            </form>
+            <div class="navigation">
+                <a href="https://www.tvmaze.com/api" target="_blank">
+                    <img src="https://static.tvmaze.com/images/api/tvm_api.png" alt="TVmaze" class="tvmaze__logo">
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>TV shows</h1>
+        <div class="shows__display">
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
